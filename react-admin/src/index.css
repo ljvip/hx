@@ -1,0 +1,81 @@
+/* src/index.css - 更新 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 移动端优化 */
+@media (max-width: 576px) {
+  .ant-layout-header {
+    padding: 0 12px !important;
+  }
+  
+  .ant-layout-content {
+    padding: 12px !important;
+  }
+  
+  .ant-card {
+    border-radius: 8px !important;
+  }
+  
+  .ant-card-body {
+    padding: 12px !important;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 12px !important;
+  }
+  
+  .ant-table-thead {
+    display: none !important;
+  }
+  
+  .ant-table-tbody > tr > td {
+    display: block !important;
+    border: none !important;
+    padding: 4px 8px !important;
+  }
+  
+  .ant-table-tbody > tr {
+    display: block !important;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 8px;
+  }
+  
+  .ant-table {
+    background: transparent !important;
+  }
+}
+
+/* 顶部导航右对齐 */
+.ant-layout-header .ant-layout-header {
+  padding: 0;
+  background: #fff;
+}
+
+.ant-layout-header .ant-layout-header > .ant-row {
+  align-items: center;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+/* 触摸优化 */
+@media (max-width: 768px) {
+  button, 
+  .ant-btn,
+  .ant-input,
+  .ant-select-selector,
+  .ant-picker {
+    min-height: 40px !important;
+  }
+  
+  .ant-table-cell {
+    font-size: 14px !important;
+  }
+}
